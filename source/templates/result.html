@@ -1,0 +1,78 @@
+
+
+<html>
+
+<!--head start-->
+<head>
+<title>Sequence Detected</title>
+
+
+
+<!--BOOTSTRAP ATTACH-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!--final size not declared in mobile for zoom-->
+<link  rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css")}}"/>
+<link  rel="stylesheet" href="{ { url_for('static', filename="css/bootstrap-theme.min.css")}}"/>
+<script src="{{ url_for('static', filename="js/jquery.min.js")}}" type="text/javascript")}}"></script>
+<script "{{ url_for('static', filename="js/bootstrap.min.js")}}"  type="{{ url_for('static', filename="text/javascript")}}"></script>
+<!--BOOTSTRAP FINISH-->
+
+
+<!--MINE CSS -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="css/index.css")}}" />
+<!--MINE CSS FINISH -->
+
+
+<!--JAVASCRIPT FOR CHECK DETAILS FROM DATABASE-->
+<script src="js/a.js" type="{ { url_for('static', filename="text/javascript") } }""></script>
+<!--JAVASCRIPT FINISH-->
+
+</head>
+<!--head closed-->
+
+<ul>
+  <li><a class="active" href="http://127.0.0.1:5000">Home</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<!--body start-->
+<body>
+  <div class="container" ><!--CIRCLE CONTAINER-->
+    <div class="row">
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4"><!--FIRST 4 COLOUMNS -->
+        <img src={{ url_for('static',filename=image_name)}} class="marg1" alt="Input Image"/>
+        <h3> <span class="text">{% print(seq) %}</span></h3>
+      </div>
+      <div class="col-lg-4">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
